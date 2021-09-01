@@ -1,5 +1,5 @@
 body {
-    margin: 0%;
+    margin: 0px;
     background-color: #AB88FF;
     font-family: 'Mulish', sans-serif;
 }
@@ -10,6 +10,7 @@ body {
     height: 80px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .header__img {
@@ -29,6 +30,7 @@ body {
     position: absolute;
     width: 100px;
     text-align: right;
+    margin: 0px 0px 0px -14px
 }
 
 .header__menu:hover ul, ul:hover {
@@ -44,14 +46,23 @@ body {
     text-decoration: none;
 }
 
-.header__menu--profile {
-    margin-right: 8px;
-    width: 40px;
-    display: flex;
+.header__menu li a:hover {
+    color: white;
+    text-decoration: underline;
 }
 
-.header__menu--p {
-    margin-right: 0px;
-    width: 40px;
+.header__menu--profile {
+    margin-right: 8px;
     display: flex;
+    align-items: center;
+}
+
+.header__menu--profile img {
+    margin-right: 8px;
+    width: 40px;
+}
+
+.header__menu--profile p {
+    margin: 8px;
+    color: white;    
 }
