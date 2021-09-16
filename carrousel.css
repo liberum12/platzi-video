@@ -9,14 +9,23 @@ body {
     position: relative;
 }
 
-/* position: relative - quiere decir que todos los elementos
-que estén dentro de él, se van a posicionar en relación al padre */
+/*  1.- Width del 100% para que abarque toda la pantalla.
+    2.- Con overflow establecemos la propiedad de scroll
+    3.- padding del 30% para tener un margen de vista
+    4.- Pos:Relative porque queremos que los elementos
+      que hereden se ajusten con base en este elemento */
 
 .carrousel__conteiner {
     white-space: nowrap;
     margin: 70px 0px;
     padding-bottom: 10px;
 }
+
+/*  1.- WhiteSpace nowrap Enlista todos los elementos en un solo renglón.
+    2.- Establecemmos un pequeño espaciado entre los elementos de la lista.
+    3.- Padding de 10px para evitar que se nos corte el elemento cuando hagamos hover
+    4.-
+    5.-*/
 
 .carrousel__item {
     background-color: palevioletred;
@@ -36,11 +45,36 @@ que estén dentro de él, se van a posicionar en relación al padre */
 
 }
 
+/* .carrousel__item:hover ~ .carrousel__item 
+        Esta linea inidica que todos los elementos posteriores al item de
+        la clase .carousel__item que se encuentra en estado hover,
+        seran transladados 100px en el eje x (translate3d (x,y,z)
+
+/*  Carousel hover.
+    1.- Desplaza los elemenots hacia la derecha
+    2.- ~ Selecciona todos los elementos excepto el elemento que está seleccionado
+    3.- */
+
 .carrousel__conteiner:hover .carrousel__item {
     opacity: 0.3;
 }
+
+/*  .carrousel__conteiner:hover .carrousel__item
+        Esta linea de codigo indica que al momento de que el container
+        (donde se alojan todos los items) todos los elementos con
+        la clase .carousel_item tendran una opacidad de 0.3 en una
+        escala de 0 a 1 o bien el 30% de su opacidad original.
+
+/* 1.- Es la opacidad que va entre 0 y 1 como valores. */
 
 .carrousel__conteiner:hover .carrousel__item:hover {
     transform: scale(1.5);
     opacity: 1;
 }
+
+/* .carrousel__conteiner:hover .carrousel__item:hover
+        Esta linea de codigo nos indica que unicamente el item,
+        que se necuentre en estado hover recibira los cambios hechos dentro del selector:
+
+/*  1.- Escala en 1.5 la imagen seleccionada
+    2.- Cuando se le haga hover a un elemento especīfico, pone la opacidad en 1. */
