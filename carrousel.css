@@ -1,0 +1,10 @@
+body {
+    margin: 0%;
+}
+
+.carrousel {
+    width: 100%;
+    overflow: scroll;
+    padding: 30px;
+    position: relative;
+}
