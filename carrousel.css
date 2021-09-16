@@ -25,7 +25,7 @@ body {
     2.- Establecemmos un pequeño espaciado entre los elementos de la lista.
     3.- Padding de 10px para evitar que se nos corte el elemento cuando hagamos hover. */
 
-.carrousel__item {
+.carrousel-item {
     background-color: palevioletred;
     width: 200px;
     height: 250px;
@@ -38,12 +38,12 @@ body {
     transform-origin: center left;
 }
 
-.carrousel__item:hover ~ .carrousel__item {
+.carrousel-item:hover ~ .carrousel-item {
     transform: translate3d(10px, 0, 0);
 
 }
 
-/* .carrousel__item:hover ~ .carrousel__item 
+/* .carrousel-item:hover ~ .carrousel-item 
         Esta linea inidica que todos los elementos posteriores al item de
         la clase .carousel__item que se encuentra en estado hover,
         serán transladados 100px en el eje x (translate3d (x,y,z). */
@@ -52,11 +52,11 @@ body {
     1.- Desplaza los elementos hacia la derecha.
     2.- ~ Selecciona todos los elementos excepto el elemento que está seleccionado. */
 
-.carrousel__conteiner:hover .carrousel__item {
+.carrousel__conteiner:hover .carrousel-item {
     opacity: 0.3;
 }
 
-/*  .carrousel__conteiner:hover .carrousel__item
+/*  .carrousel__conteiner:hover .carrousel-item
         Esta linea de código indica que al momento de que el container
         (donde se alojan todos los items) todos los elementos con
         la clase .carousel_item tendran una opacidad de 0.3 en una
@@ -64,12 +64,12 @@ body {
 
 /* 1.- Es la opacidad que va entre 0 y 1 como valores. */
 
-.carrousel__conteiner:hover .carrousel__item:hover {
+.carrousel__conteiner:hover .carrousel-item:hover {
     transform: scale(1.5);
     opacity: 1;
 }
 
-/* .carrousel__conteiner:hover .carrousel__item:hover
+/* .carrousel__conteiner:hover .carrousel-item:hover
         Esta linea de codigo nos indica que unicamente el item,
         que se necuentre en estado hover recibira los cambios hechos dentro del selector. */
 
