@@ -6,7 +6,7 @@ body {
 .header {
     align-items: center;
     background-color: #21c08b;
-    color: :white;
+    color: white;
     display: flex;
     height: 100px;
     justify-content: space-between;
@@ -40,6 +40,7 @@ body {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.4);
 }
 
 .login__container--form {
