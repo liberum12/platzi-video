@@ -48,6 +48,21 @@ body {
     flex-direction: column;
 }
 
+.register__container--login {
+    font-size: 16px;
+}
+
+.register__container--login a {
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.register__container--login a:hover {
+    text-decoration: underline;
+}
+
 .input {
     background-color: transparent;
     border-left: 0px;
@@ -60,6 +75,8 @@ body {
     padding: 0px 20px;
     outline: none;
     height: 50px;
+    text-rendering: auto;
+    color: white;
 }
 
 ::placeholder {
@@ -99,4 +116,35 @@ body {
 
 .footer a:hover {
     text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .header {
+        justify-content: center;
+    }
+    
+    .register__container {
+        background-color: transparent;
+        border: none;
+        padding: 0%;
+        width: 100%;
+        box-shadow: none;
+        align-items: center;
+        text-align: center;
+        justify-content: space-evenly;
+    }
+
+    .footer {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .register__container--login {
+        font-size: 18px;
+    }
+
+    .register__container--login a {
+    font-size: 18px;
+    }
 }
