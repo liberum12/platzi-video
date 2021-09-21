@@ -40,6 +40,7 @@ body {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.4);
 }
 
 .register__container--form {
