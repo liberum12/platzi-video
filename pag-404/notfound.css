@@ -1,0 +1,85 @@
+body {
+    margin: 0px;
+    font-family: 'Mulish', sans-serif;
+    font-size: 15px;
+}
+
+.header {
+    background-color: #21c08b;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__img {
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.notfound {
+    background: linear-gradient(#21c08b, #aB88FF);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 30px;
+    min-height: calc(100vh - 180px);
+}
+
+.text {
+    font-size: 100px;
+    color: white;
+    margin: inherit;
+    font-weight: bold;
+}
+
+.animated {
+    animation-duration: 2.5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+
+@keyframes wobble {
+    0% {transform: translateX(0%);}
+    15% {transform: translateX(-25%) rotate(-5deg);}
+    30% {transform: translateX(20%) rotate(3deg);}
+    45% {transform: translateX(-15%) rotate(-3deg);}
+    60% {transform: translateX(10%) rotate(2deg);}
+    75% {transform: translateX(-5%) rotate(-1deg);}
+    100% {transform: translateX(0%);}
+}
+
+.wobble {
+    animation-name: wobble;
+}
+
+.notfound p {
+    font-size: 30px;
+    color: white;
+    margin: inherit;
+    font-weight: bold;
+}
+
+.footer {
+    background-color: #ab88ff;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+}
+
+.footer a {
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    padding-left: 30px;
+    text-decoration: none;
+
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
