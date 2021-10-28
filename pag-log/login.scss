@@ -3,6 +3,12 @@ body {
     font-family: 'Mulish', sans-serif;
 }
 
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+
 .header {
     align-items: center;
     background-color: #21c08b;
@@ -89,12 +95,12 @@ body {
 }
 
 .login__container--register {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .login__container--register a {
     font-size: 16px;
-    color: white;
+    color: $blanco;
     font-weight: bold;
     text-decoration: none;
 }
